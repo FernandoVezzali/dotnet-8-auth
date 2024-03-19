@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "6f7b77b9-a086-4524-8405-324b35906adf",
+		"name": "NewAuthDotNet8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18674416"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"fvezzali\",\r\n    \"password\":\"Password1!\",\r\n    \"email\":\"fvezzali@carnival.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:44308/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\":\"Password1!\",\r\n    \"email\":\"fvezzali@carnival.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:44308/login"
+			},
+			"response": []
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refreshToken\":\"CfDJ8GUxiIfhthBHpmATIFpyxjRgyn9aV_oTXr3tWGd4yQhASN6vknwvh3fgghGj4KMVTPt3OSoMYYTivN94j8qMCymY2zmSoA-K2QGFDWKBi4nwK8Y1RjkYQX7Yi3CtHxF-sCv1ZV1Ok5lX5TZxbbagk7HvsHQdsF1agdReirGoqMhpM_u4rzL0Hlp7qf0SCsISG5QG4QMZwkDDCDSQYLH0SQzDyC-jiHiZZKfEqAaxy48tSTd3DXlsrTUf2v5VMSe7vV250i9oHp4u2M3xAhz-WXITpBEnNxEYy5jNKYAvjAYFktpAcY6c7i47qTysJZKljYt8280cCUy9v-EYYXpFN_Uju9KhYryhxRGMmf7kBg74JEP9eMQow5zV3ASC8INRSD1GoOzWEC1EKyxXkENqrlDrgI_qGX3sIRrryGxOpRuKe3Nt9--V88ohJlj5i2P5upuf-76wLj_5pW9jT4TATo2GG18xavH8o1_aVUUG6ZooSPoZMPZ-u1lI0Y4MTQPgcTUtJC8GChQSY5JeMnqNMNcE17cPnswoge4T0ZhQI-hNMj-w9vSaM3WOeiwIVk01sBW-uZIMTwoF03htP76Vbyvtfh38i3PS5Bfrkip8GyeINJQAsSMWo9nlHBY4TZDT7JZ4XpwoRQlGG6RfIgTqRIdDJthlD6FXQYZnllsolIGmmmw4vqvn-XUNf7SDSTGbod8CRlKhgz-BAhiquZf77HY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:44308/refresh"
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "CfDJ8GUxiIfhthBHpmATIFpyxjSNGNNLunIpjl_yXM-kEFlEdyMylroaSF0yAcHxSwbCr67HiWuaWew7TgtuxN5XQfUKfdhcs-1kAB9rYT0-W_l4svfyYl-3ZTY1tXPJ_KazTs6ys-37zX48bjS8Y1tnWHfid_bWCSVNoDI76v9HTNRB4U_k-JTDwtBBUppcMtCF00MeFxtIMH-s7_z76PxBnoX3c-gg7HxVfsnirtCgb33fxY8HRMl6VcVBOARAXRwt55O6otCOZg0293SSzl8AVe6bNK5aLRm5AuWWAkmmkjo-5_DYBH_Crdx0buICxo7lmEUMTqL97guTrNQaiDNaoTyN9qj8JP4hYnQoIiLZW5oFgj5jzGlVA87wkkVm8G0g0Wbs68HmZ-t6fND6UdiE9Glnqk4QT6ENbMpLqZ8VLDhFvOCg6dv8xQwACAxAqbMmrm6jnLcKoiBNneLVkXdeGO6gJxq2e_Ir7mQwEH9bOSK9yjZgfCKt3huM5sHq8s3itVD7j_ngdNEl-Zn0zWfC2qzTkPBccSw1kHS-qMUSINliO3BodBy09yUsOxeU7nUj__-2SO1OVV4i1DMw9qqtJNkwEemqqoOnc3rd2nlfQCXu_VbfNDiV0njOvta-JcJNwAWis9pqrukPpxO8_CkpzUP2UA2IFGXQKjC4Ib6hLFfod43j8zU2Q8Mvy3Jqbw_DJl_lEHyXRFKma6NgHXYoEHI"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:44308/"
+			},
+			"response": []
+		}
+	]
+}
